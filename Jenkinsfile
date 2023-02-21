@@ -37,7 +37,7 @@ pipeline {
         always{
             mail to: "kepha.okari@student.moringaschool.com",
             subject: "Jenkins Gallery App",
-            body: "pipeline finished running"
+            body: "pipeline finishccced running"
         }
     }
     
