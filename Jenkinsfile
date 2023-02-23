@@ -39,8 +39,8 @@ pipeline {
     post{
         always{
             mail to: "${recipientEmails}",
-            subject: "Jenkins Gallery App",
-            body: "pipeline finishccced running"
+            subject: "Gallery app",
+            body: "pipeline finished running"
         }
     }
     
