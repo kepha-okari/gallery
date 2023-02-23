@@ -40,7 +40,7 @@ pipeline {
         always{
             mail to: "${recipientEmails}",
             subject: "Gallery app",
-            body: "pipeline finished running"
+            body: "building finished"
         }
     }
     
