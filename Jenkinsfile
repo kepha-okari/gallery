@@ -3,6 +3,9 @@ pipeline {
     tools {
         nodejs "Node.js"
     }
+    environment {
+        recipientEmails = "kephaokari@gmail.com, rkapps47@gmail.com"
+    }
     stages {
         
         stage('clone repository') {
@@ -35,13 +38,12 @@ pipeline {
     
     post{
         always{
-            mail to: "kepha.okari@student.moringaschool.com",
+            mail to: "${recipientEmails}",
             subject: "Jenkins Gallery App",
             body: "pipeline finishccced running"
         }
     }
     
 
-  
   
 }
