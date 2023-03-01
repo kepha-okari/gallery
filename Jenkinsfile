@@ -30,7 +30,7 @@ pipeline {
         stage ('Build'){
             steps {
                 echo 'run server here'
-                // sh 'node   server'     
+                // sh 'node server'     
             }
         }
     
